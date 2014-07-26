@@ -6,8 +6,9 @@ import cv2
 
 class App(object):
     def __init__(self, video_src):
-        # self.cam = cv2.VideoCapture('2.wmv')
-        self.cam = cv2.VideoCapture('soccer_mean_shift.mp4')
+        # self.cam = cv2.VideoCapture('video/1.avi')
+        # self.cam = cv2.VideoCapture('video/2.wmv')
+        self.cam = cv2.VideoCapture('video/soccer_mean_shift.mp4')
         ret, self.frame = self.cam.read()
 
         self.frame = cv2.cvtColor(self.frame, cv2.COLOR_BGR2GRAY)
